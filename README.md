@@ -13,25 +13,14 @@ $ sudo apt install python-pip
 $ sudo apt install python3-pip
 ```
 
-
-**Ensuite tu récupères le projet dans le gitlab :**
-
-`$ git clone https://gitlab.com/fairme-project/sf_vision/vision_jetson_client.git`
-
-**Ensuite tu installes les librairies nécessaires pour faire tourner le client :**
-
-`$ python3 -m pip install -r requirements.txt`
-
 **Vérifie le port de ta caméra**
 
 `$ v4l2-ctl --list-devices`
 
+
 **Ensuite tu as juste à lancer le programme (pour l'instant, tu lances test.py le temps que je mette client.py à jour) en pensant à choisir la bonne caméra (pour l'instant faut que tu modifies le code source du client en remplaçant le 2 par le port que tu utilises (0 par défaut)) :**
 
-`$ python3 client.py`
-
-Pense bien à lancer ton server avant, sinon tu risques d'avoir une erreur (j'ai pas fini de débugger cette partie).
-
+Etienne ne t'occupe pas de ça pour l'instant, on n'a pas besoin d'openCV
 ** Setup OpenCV
 
 ```
