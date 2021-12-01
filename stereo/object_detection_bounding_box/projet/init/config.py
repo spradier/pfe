@@ -5,7 +5,9 @@ import os
 # annotation directory 
 BASE_PATH = "dataset"
 IMAGES_PATH = os.path.sep.join([BASE_PATH, "drone"])
+IMAGES_PATH_TEST = os.path.sep.join([BASE_PATH, "drone_test"])
 ANNOTS_PATH = os.path.sep.join([BASE_PATH, "annotation.csv"])
+
 
 # output directory
 BASE_OUTPUT = "output"
