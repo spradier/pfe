@@ -14,7 +14,7 @@ import glob
 print("[INFO] loading object detector...")
 model = load_model(config.MODEL_PATH)
 
-cap = cv2.VideoCapture(0)
+cap = jetson.utils.videoSource("csi://0")
 
 while cap.isOpened():
     ret, image = cap.read()
@@ -25,7 +25,7 @@ while cap.isOpened():
         preds = model.predict(image)[0]
         (startX, startY, endX, endY) = preds
 
-        image = imutils.resize(image, width=600)
+        #image = imutils.resize(image, width=600)
         h = image.shape[0]
         w = image.shape[1]
 
