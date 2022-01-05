@@ -18,4 +18,7 @@ Si tu arrives à faire ça déjà, et à la finir, c'est énorme parce qu'on pou
 - la stereo
 - les fisheyes
 
-Bonne chance
+
+Références importantes :
+Cameras paramètres : https://microsoft.github.io/AirSim/settings/
+General sensors : https://microsoft.github.io/AirSim/sensors/
