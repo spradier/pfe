@@ -50,5 +50,5 @@ final_dict = {"SettingsVersion": 1.2,
             }
 
 
-with open('data.json', 'w') as outfile:
+with open('settings.json', 'w') as outfile:
     json.dump(final_dict, outfile, indent=4)
